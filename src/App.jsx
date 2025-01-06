@@ -12,8 +12,10 @@ function App() {
 
   const [idToken, setIdToken] = useState("");
   const [profile, setprofile] = useState({});
+  const [isGuest, setIsGuest] = useState(false);
 
-  const gitty = idToken ? <Github /> : <Page />;
+  const gitty =
+    idToken || isGuest ? <Github /> : <Page setIsGuest={setIsGuest} />;
 
   return (
     <>

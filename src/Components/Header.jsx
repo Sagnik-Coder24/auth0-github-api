@@ -1,5 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 
 function Header({ idToken, setIdToken, setprofile }) {
